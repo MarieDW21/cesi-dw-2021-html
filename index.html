@@ -10,10 +10,10 @@
 				<form action="mailto:marie62390.defrance@gmail.com" method="post" enctype="text/plain">
 					<div class="form">
 						<div class="contact">
-							<input type="text" name="adress" placeholder="Adresse" value="">
-							<input type="text" name="town" placeholder="Ville" value="">
-							<input type="number" name="postal" placeholder="Code postal" value="">
-							<input type="tel" name="telephon" placeholder="Telephone" value="">
+							<input type="text" pattern="[a-z][0-9]" maxlength="30" name="adress" placeholder="Adresse" value="">-
+							<input type="text" name="town" pattern="[a-z]" maxlength="40" placeholder="Ville" value="">
+							<input type="number" name="postal" pattern="[0-9]" maxlength="5" placeholder="Code postal" value="">
+							<input type="tel" name="telephon" pattern="[0-9]" maxlength="10" placeholder="Telephone" value="">
 							<input type="text" name="contact_reason" placeholder="Raison du contact" value="">
 						</div>
 						
