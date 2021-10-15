@@ -3,27 +3,25 @@
 		<head>
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="CSS/index.css">
-			<title>Formulaire</title>
+			<title>Contact</title>
 		</head>
 		<body>
-			<form>
-				<div id="form">
-			<div class="choice1">
-				<label for="nom">Nom :</label>
-				<label for="prénom">Prénom :</label>
-				<label for="date de naissance">Date de naissance :</label>
-				<label for="ville">Ville :</label>
-				<label for="téléphone">Téléphone :</label>
-			</div>
-			<div class="choice2">
-				<input type="texte" name="Nom" pattern="[a-z]{4, 20}" placeholder="Defrance" required="">
-				<input type="texte" name="prénom" pattern="[a-z]" placeholder="Marie" maxlength="20" required="">
-				<input type="date" name="date de naissance" required="">
-				<input type="texte" name="ville" pattern="[a-z]" placeholder="Arras" maxlength="20" required="">
-				<input type="tel" name="télephone" pattern="[0-9]" placeholder="0601020304" maxlength="10" required="">
-				<input id="submitbutton" type="submit" name="envoyer">
-			</div>
-		</div>
-			</form>
+			
+				<form action="mailto:marie62390.defrance@gmail.com" method="post" enctype="text/plain">
+					<div class="form">
+						<div class="contact">
+							<input type="text" name="adress" placeholder="Adresse" value="">
+							<input type="text" name="town" placeholder="Ville" value="">
+							<input type="number" name="postal" placeholder="Code postal" value="">
+							<input type="tel" name="telephon" placeholder="Telephone" value="">
+							<input type="text" name="contact_reason" placeholder="Raison du contact" value="">
+						</div>
+						
+						<div id="mailto">
+						<button type="submit">Envoyer un mail</button>
+						</div>
+					</div>	
+				</form>
+			
 		</body>
 	</html>
