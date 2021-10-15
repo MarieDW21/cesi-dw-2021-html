@@ -10,10 +10,12 @@
 				<form action="mailto:marie62390.defrance@gmail.com" method="post" enctype="text/plain">
 					<div class="form">
 						<div class="contact">
-							<input type="text" maxlength="40" name="adress" placeholder="Adresse" value="">
-							<input type="text" name="town" maxlength="40" placeholder="Ville" value="">
-							<input type="number" name="postal" pattern="[0-9]" maxlength="5" placeholder="Code postal" value="">
-							<input type="tel" name="telephon" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Telephone" value="">
+							<input type="text" name="firstname"pattern="[A-Za-z]" maxlength="20"  placeholder="Nom" value="" required>
+							<input type="text" name="name"pattern="[A-Za-z]" maxlength="20"  placeholder="prénom" value="" required>
+							<input type="text" name="adress"pattern="[A-Za-z0-9'\.\-\s\,]" maxlength="40"  placeholder="Adresse" value="" required>
+							<input type="text" name="town" pattern="[A-Za-z'\.\-\s\,]" maxlength="40" placeholder="Ville" value="" required>
+							<input type="number" name="postal" pattern="[0-9]" maxlength="5" placeholder="Code postal" value="" required>
+							<input type="tel" name="telephon" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Telephone" value="" required>
 							<input type="text" name="contact_reason" placeholder="Raison du contact" value="" required>
 						</div>
 						
